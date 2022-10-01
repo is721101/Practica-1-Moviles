@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_find_app/home_page.dart';
+import 'package:music_find_app/pages/home_page.dart';
 import 'package:provider/provider.dart';
 
 import 'Provider/song_provider.dart';
@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Music Find App',
-      theme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(brightness: Brightness.dark, primaryColor: Colors.purple),
+      
       darkTheme: ThemeData(brightness: Brightness.dark),
       home: HomePage()
     );
